@@ -1,0 +1,12 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ff0b37;
+  border: 1px solid #ff0b37;
+}

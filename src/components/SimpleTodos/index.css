@@ -1,0 +1,20 @@
+.bg-container {
+  background-color: #ffc2a0;
+  color: black;
+  font-family: Roboto;
+  padding: 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+}
+.heading {
+  color: #ff8542;
+}
