@@ -32,6 +32,7 @@ const TodoItem = props => {
   return (
     <li className="todo-container">
       <input
+        className="checkbox"
         checked={isCompleted}
         onChange={onUpdateCheckedStatus}
         type="checkbox"
@@ -44,35 +45,39 @@ const TodoItem = props => {
           value={currTitle}
         />
       ) : (
-        <p className={`${isCompleted && 'task-completed'}`}>{currTitle}</p>
+        <p className={`title-input ${isCompleted && 'task-completed'}`}>
+          {currTitle}
+        </p>
       )}
-      {isEdited ? (
+      <div className="button-container">
+        {isEdited ? (
+          <button
+            className="custom-button save-button"
+            id={id}
+            onClick={(onUpdateTodoTitle, onEditTitle)}
+            type="button"
+          >
+            Save
+          </button>
+        ) : (
+          <button
+            className="custom-button edit-button"
+            id={id}
+            onClick={onEditTitle}
+            type="button"
+          >
+            Edit
+          </button>
+        )}
         <button
-          className="custom-button save-button"
+          className="custom-button"
           id={id}
-          onClick={(onUpdateTodoTitle, onEditTitle)}
+          onClick={onDeleteTodo}
           type="button"
         >
-          Save
+          Delete
         </button>
-      ) : (
-        <button
-          className="custom-button edit-button"
-          id={id}
-          onClick={onEditTitle}
-          type="button"
-        >
-          Edit
-        </button>
-      )}
-      <button
-        className="custom-button"
-        id={id}
-        onClick={onDeleteTodo}
-        type="button"
-      >
-        Delete
-      </button>
+      </div>
     </li>
   )
 }

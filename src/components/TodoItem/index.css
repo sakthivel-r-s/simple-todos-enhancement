@@ -6,7 +6,7 @@
   text-decoration: line-through;
 }
 .custom-button {
-  width: 100px;
+  width: 80px;
   height: 30px;
   border-radius: 5px;
   background-color: transparent;
@@ -15,14 +15,14 @@
   outline: none;
 }
 .save-button {
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: 10px;
   border: 1px solid green;
   color: green;
   outline: none;
 }
 .edit-button {
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: 10px;
   border: 1px solid blue;
   color: blue;
@@ -30,6 +30,29 @@
 }
 .title-input {
   width: 50%;
-  height: 30px;
   font-size: 16px;
+  margin-left: 10px;
+}
+.button-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 992px) {
+  .checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  .title-input {
+    font-size: 20px;
+  }
+  .custom-button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
 }

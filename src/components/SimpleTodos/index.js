@@ -137,7 +137,7 @@ class SimpleTodos extends Component {
               Add
             </button>
           </div>
-          <ul>
+          <ul className="todo-list-container">
             {todoList.map(todo => (
               <TodoItem
                 todo={todo}

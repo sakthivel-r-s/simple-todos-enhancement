@@ -17,6 +17,7 @@
 }
 .heading {
   color: #ff8542;
+  font-size: 30px;
 }
 .add-todo {
   width: 100%;
@@ -26,13 +27,6 @@
 }
 .newTitle {
   width: 60%;
-  height: 25px;
-  font-size: 16px;
-  padding-left: 10px;
-  margin-right: 10px;
-}
-.newCount {
-  width: 50px;
   height: 25px;
   font-size: 16px;
   padding-left: 10px;
@@ -48,4 +42,27 @@
   outline: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.todo-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: left;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 40px;
+  }
+  .newTitle {
+    width: 60%;
+    height: 35px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+  .add-button {
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+  }
 }
