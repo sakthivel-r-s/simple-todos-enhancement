@@ -18,3 +18,34 @@
 .heading {
   color: #ff8542;
 }
+.add-todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newTitle {
+  width: 60%;
+  height: 25px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.newCount {
+  width: 50px;
+  height: 25px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.add-button {
+  width: 50px;
+  height: 25px;
+  font-size: 16px;
+  background-color: #ff8542;
+  color: white;
+  border: 0px none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
